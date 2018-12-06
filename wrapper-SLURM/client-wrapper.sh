@@ -20,6 +20,8 @@
 ## how long a job takes, wallclock time hh:mm:ss
 #SBATCH -t 00:05:00
 
+module load gcc/4.9.3-fasrc01 openmpi/2.1.0-fasrc01
+
 # print usage information
 if [ "$#" -ne "3" ]; then
    echo "error: Expecting parameters: <sample list> <tmp dir> <index file>"
